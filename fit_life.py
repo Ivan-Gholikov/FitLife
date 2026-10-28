@@ -1,10 +1,9 @@
-# Начинаю писать данные пользователя
 user_name = input("Добрый день, как Вас зовут? ")
 user_age = int(input("Сколько Вам лет? "))
 user_weight = float(input("Какой у Вас вес в кг? "))
-user_height_cm = float(input("Какой у вас рост в см? "))
+# Теперь запрашиваем сразу в метрах
+user_height_m = float(input("Какой у вас рост в метрах? "))
 
-user_height_m = user_height_cm / 100
 bmi = user_weight / (user_height_m ** 2)
 
 water_ml = user_weight * 30
